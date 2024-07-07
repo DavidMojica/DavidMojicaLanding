@@ -17,7 +17,7 @@ const Header = ():React.JSX.Element => {
       };
 
   return (
-    <header className='sticky top-0'>
+    <header className='sticky top-0 shadow-[rgba(0,0,4,0.1)_0px_0px_20px]'>
         <nav className='flex justify-between py-6 px-2 md:px-10 bg-white dark:bg-blue_dark text-primary dark:text-white'>
             <h2 className='text-primary dark:text-tertiary text-3xl md:text-4xl font-bolder underline decoration-tertiary dark:decoration-primary'>David Mojica</h2>
 
@@ -59,12 +59,12 @@ const Header = ():React.JSX.Element => {
                 </li>
             </ul>
             <section className='absolute  w-full bottom-0 p-3 '>
-                    <ul className='flex justify-center items-center gap-5 text-2xl'>
-                        <li><a href="https://github.com/DavidMojica" target='_blank'><FaGithub/></a></li>
-                        <li><a href="https://wa.me/573197750000" target='_blank'><FaWhatsapp/></a></li>
-                        <li><a href="https://www.linkedin.com/in/david-mojica-vergara-a3898a265/" target='_blank'><FaLinkedin/></a></li>
-                        <li><a href="mailto:davidmojicav@gmail.com" target='_blank'><SiGmail/></a></li>
-                    </ul>
+                <ul className='flex justify-center items-center gap-5 text-2xl'>
+                    <li><a href="https://github.com/DavidMojica" target='_blank'><FaGithub/></a></li>
+                    <li><a href="https://wa.me/573197750000" target='_blank'><FaWhatsapp/></a></li>
+                    <li><a href="https://www.linkedin.com/in/david-mojica-vergara-a3898a265/" target='_blank'><FaLinkedin/></a></li>
+                    <li><a href="mailto:davidmojicav@gmail.com" target='_blank'><SiGmail/></a></li>
+                </ul>
             </section>
         </aside>
     </header>

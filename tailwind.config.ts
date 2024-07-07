@@ -29,7 +29,7 @@ const config: Config = {
         HiddenSidebar: '400px',
         '1/5':'20%',
         '22': '5.5rem'
-      }
+      },
     },
     
   },
