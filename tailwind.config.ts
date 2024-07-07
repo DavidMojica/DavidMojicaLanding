@@ -24,7 +24,12 @@ const config: Config = {
         secondary: '#6B7D90',
         tertiary: '#D5E0EC',
         blue_dark:'#0D1B2A'
-      }
+      },
+      spacing:{
+        HiddenSidebar: '400px',
+        '1/5':'20%',
+        '22': '5.5rem'
+      },
     },
     
   },
