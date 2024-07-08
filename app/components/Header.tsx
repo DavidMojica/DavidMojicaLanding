@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// Self imports
+import Texts from '../models/Text';
 // Icons
 import { IoHomeOutline, IoChatboxEllipsesOutline, IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 import { FaGithub, FaWhatsapp, FaLinkedin,  } from 'react-icons/fa6';
@@ -17,9 +19,11 @@ const Header = ():React.JSX.Element => {
       };
 
   return (
-    <header className='sticky top-0 shadow-[rgba(0,0,4,0.1)_0px_0px_20px]'>
-        <nav className='flex justify-between py-6 px-2 md:px-10 bg-white dark:bg-blue_dark text-primary dark:text-white'>
-            <h2 className='text-primary dark:text-tertiary text-3xl md:text-4xl font-bolder underline decoration-tertiary dark:decoration-primary'>David Mojica</h2>
+    <header className='sticky top-0 shadow-[rgba(0,0,4,0.1)_0px_0px_20px] z-50'>
+        <nav className='flex justify-between py-6 px-2 md:px-10 bg-white dark:bg-bgdark text-primary dark:text-white'>
+            <h2>
+                <Texts.UnderlinedTitle text='David Mojica' size='text-3xl' mdsize='text-4xl' />
+            </h2>
 
             <section className='flex text-xl font-normal'>
                 <ul className='hidden md:flex '>
