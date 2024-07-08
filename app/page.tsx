@@ -23,7 +23,7 @@ export default function Home():React.JSX.Element {
             <img src="/photo.jpeg" alt="foto.png" className="size-60 lg:size-72 rounded-full" />
             <p className="text-secondary dark:text-tertiary mt-4 text-xl">Hola, soy <span className="font-bold">David Mojica</span></p>
             <h2 className="text-primary dark:text-white text-3xl md:text-5xl mt-4 font-bolder">Ingeniero de Software</h2>
-            <p className="text-secondary font-light dark:text-tertiary mt-4 md:text-xl">
+            <p className="text-secondary dark:text-tertiary mt-4 md:text-xl ">
             Soy un desarrollador especializado en <strong className="font-bold">Aplicativos Web</strong> y <strong className="font-bold">Análisis de datos</strong>,
             con más de <strong className="font-bold">2 años</strong> de experiencia profesional en la industria del software.</p>
             <section className='text-secondary  dark:text-tertiary my-6'>
@@ -49,23 +49,23 @@ export default function Home():React.JSX.Element {
           </article>
         </section>
         {/* 3rd Section: About */}
-        <section className="pb-20 xl:pt-12 bg-white dark:bg-bgdark">
+        <section className="pb-20 xl:pt-6 bg-white dark:bg-bgdark">
           <div className="flex md:m-auto md:w-2/3 lg:w-4/5 xl:w-2/3 lg:min-w-[984px] mx-6 lg:gap-16">
             <article className="w-screen lg:w-1/2">
                 <h2>
-                  <Texts.UnderlinedTitle text="Sobre mí" size="text-4xl" mdsize="text-5xl" />
+                  <Texts.UnderlinedTitle text="Sobre mí" size="text-4xl" mdsize="text-7xl" />
                 </h2>
                 <aside className="grid place-items-center lg:hidden">
                   <img src="/photo.jpeg" alt="" className="max-h-80 max-w-96 w-full mt-12 rounded-tl-xl rounded-tr-100 rounded-bl-100 rounded-br-xl object-cover" />
                 </aside>
-                <p className="text-secondary pt-10 lg:pt-20 text-xl tracking-wide leading-6 xl:leading-8 ">
+                <p className="text-secondary dark:text-white pt-10 lg:pt-20 text-xl tracking-wide leading-6 xl:leading-8 ">
                   Actualmente me desempeño como Desarrollador de Software Freelancer (independiente) y analista de datos. Terminé mi carrera universitaria en <a href="https://pascualbravo.edu.co/" target="_blank" className="underline">Institución Universitaria Pascual Bravo </a>
                   en Mayo de 2024, pero me he desempeñado como desarrollador independiente durante más de 2 años.
                 </p>
                 <h2 className="pt-12">
                   <Texts.UnderlinedTitle text="¿Qué puedo hacer?" size="text-4xl" mdsize="text-5xl" />
                 </h2>
-                <p className="text-secondary pt-8 text-xl tracking-wide leading-6 xl:leading-8 ">
+                <p className="text-secondary dark:text-white pt-8 text-xl tracking-wide leading-6 xl:leading-8 ">
                   Durante mi trayectoria, he creado sitios web de comercio electrónico, sistemas de control de inventario, sistemas internos para empresas, plataformas web, diseño web UX/UI, bots, aplicaciones para escritorio, páginas web,
                   sistemas de análisis de datos, dashboards y gráficos con Power BI, Metabase y otras herramientas, aplicaciones para dispositivos móviles, plataformas inmobiliarias, también he participado en la creación y desarrollo de videojuegos.
                 </p>
