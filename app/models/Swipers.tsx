@@ -36,9 +36,6 @@ class Swipers{
                 },
                 1280:{
                     slidesPerView:6
-                },
-                1536:{
-                    slidesPerView:7
                 }
             }}
             modules={[Autoplay]}

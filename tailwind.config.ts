@@ -28,8 +28,16 @@ const config: Config = {
       spacing:{
         HiddenSidebar: '400px',
         '1/5':'20%',
-        '22': '5.5rem'
+        '22': '5.5rem',
+        '68': '17rem',
+        '90': '22.5rem',
+        '124': '31rem',
+        '136': '34rem'
       },
+      borderRadius: {
+        '100': '100px',
+        '200': '200px'
+      }
     },
     
   },
