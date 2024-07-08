@@ -14,7 +14,7 @@ class Cards{
         return(
             <article className={`shadow-xl dark:shadow-md dark:shadow-white p-10 rounded-xl ${size}`}>
                 <h3><Texts.UnderlinedTitle text={title} size="text-3xl" /></h3>
-                <p className="text-xl mt-6 text-secondary overflow-hidden">
+                <p className="text-xl mt-6 text-secondary dark:text-white overflow-hidden">
                     {message}
                 </p>
             </article>
