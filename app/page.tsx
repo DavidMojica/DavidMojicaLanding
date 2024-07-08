@@ -53,7 +53,7 @@ export default function Home():React.JSX.Element {
           <div className="flex md:m-auto md:w-2/3 lg:w-4/5 xl:w-2/3 lg:min-w-[984px] mx-6 lg:gap-16">
             <article className="w-screen lg:w-1/2">
                 <h2>
-                  <Texts.UnderlinedTitle text="Sobre mí" size="text-4xl" mdsize="text-7xl" />
+                  <Texts.UnderlinedTitle text="Sobre mí" size="text-4xl md:text-7xl" />
                 </h2>
                 <aside className="grid place-items-center lg:hidden">
                   <img src="/photo.jpeg" alt="" className="max-h-80 max-w-96 w-full mt-12 rounded-tl-xl rounded-tr-100 rounded-bl-100 rounded-br-xl object-cover" />
