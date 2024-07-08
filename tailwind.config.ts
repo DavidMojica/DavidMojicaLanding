@@ -23,13 +23,21 @@ const config: Config = {
         primary:'#050A10',
         secondary: '#6B7D90',
         tertiary: '#D5E0EC',
-        blue_dark:'#0D1B2A'
+        bgdark:'#0D1B2A'
       },
       spacing:{
         HiddenSidebar: '400px',
         '1/5':'20%',
-        '22': '5.5rem'
+        '22': '5.5rem',
+        '68': '17rem',
+        '90': '22.5rem',
+        '124': '31rem',
+        '136': '34rem'
       },
+      borderRadius: {
+        '100': '100px',
+        '200': '200px'
+      }
     },
     
   },
