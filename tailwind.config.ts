@@ -23,7 +23,9 @@ const config: Config = {
         primary:'#050A10',
         secondary: '#6B7D90',
         tertiary: '#D5E0EC',
-        bgdark:'#0D1B2A'
+        bgdarkless: '#08121D',
+        bgdark:'#0D1B2A',
+        muted: '#EAEFF5'
       },
       spacing:{
         HiddenSidebar: '400px',
