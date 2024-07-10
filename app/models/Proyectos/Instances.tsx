@@ -1,6 +1,6 @@
 import Proyecto from "./Proyecto";
 
-const ProyectoDucaplast = new Proyecto('Ducaplast Ecommerce',
+const ProyectoDucaplast = new Proyecto(0,'Ducaplast Ecommerce',
     <>
         Ducaplast Ecommerce es una aplicación web de uso privado diseñada para optimizar el proceso de venta de los productos de la empresa, así como el proceso de empaquetamiento, facturación, despacho y entrega de los diversos pedidos. 
         <br /><br />
@@ -15,7 +15,7 @@ const ProyectoDucaplast = new Proyecto('Ducaplast Ecommerce',
     {available:true, URL:'https://github.com/DavidMojica/ducaplast-ecommerce'}
 );
 
-const ProyectoSaludMental = new Proyecto('Salud Mental',
+const ProyectoSaludMental = new Proyecto(1, 'Salud Mental',
     <>
         Proyecto salud mental es una aplicacion web de uso interno que está próxima a desplegarse en algunos hospitales de la ciudad de Bello, Antioquia. 
         <br />
@@ -29,7 +29,7 @@ const ProyectoSaludMental = new Proyecto('Salud Mental',
     '11/23', '/previews/saludmental.jpeg', {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/T3'}
 );
 
-const ProyectoArriendofinca = new Proyecto('Arriendofinca.com',
+const ProyectoArriendofinca = new Proyecto(2, 'Arriendofinca.com',
     <>
         Plataforma inmobiliaria abierta que permite a los usuarios, tanto particulares como agentes inmobiliarios publicar anuncios detallados de sus propiedes, incluyendo las características claves como fotos, ubicación, tamaño, precio, descripción, habitaciones y otros aspectos. 
         <br /><br />
@@ -41,7 +41,7 @@ const ProyectoArriendofinca = new Proyecto('Arriendofinca.com',
     '05/24', '/previews/arriendofinca.png', {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/arriendofinca-II'}
 );
 
-const ProyectoDavidaStore = new Proyecto('Davida Store',
+const ProyectoDavidaStore = new Proyecto(3, 'Davida Store',
     <>
         'Landing page de tienda online de artículos varios. Contiene una página de landing y un catálogo de productos. 
     </>,
@@ -49,7 +49,7 @@ const ProyectoDavidaStore = new Proyecto('Davida Store',
     '06/24', '/previews/davidastore.png', {available:true, URL: 'https://www.davidastore.com/'}, {available:true, URL:'https://github.com/DavidMojica/davida-store'}
 );
 
-const ProyectoSkyHub = new Proyecto('SkyHub',
+const ProyectoSkyHub = new Proyecto(4, 'SkyHub',
     <> 
         Aplicación web que muestra información útil sobre los objetos celestes, se comsumen diversas API como fuentes de información, como por ejemplo la API de la Nasa, para mayor precisión de los datos.
     </>,
@@ -57,7 +57,7 @@ const ProyectoSkyHub = new Proyecto('SkyHub',
     '04/24', '/previews/skyhub.png', {available:true, URL:'https://skyhub2.vercel.app/'}, {available:true, URL:'https://github.com/DavidMojica/SkyHub'}
 )
 
-const ProyectoAstroid = new Proyecto ('Astroid',
+const ProyectoAstroid = new Proyecto (5, 'Astroid',
     <>
         Aplicación móvil que muestra información útil sobre los objetos celestes, se comsumen diversas API como fuentes de información, como por ejemplo la API de la Nasa, para mayor precisión de los datos. 
     </>,
