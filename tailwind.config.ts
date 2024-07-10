@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import flowbyte from 'flowbite-react/tailwind'
 
 const config: Config = {
   darkMode:'class',
@@ -6,6 +7,7 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    flowbyte.content(),
   ],
   theme: {
     extend: {
@@ -30,6 +32,8 @@ const config: Config = {
       spacing:{
         HiddenSidebar: '400px',
         '1/5':'20%',
+        '9/10':'90%',
+        '1/20':'5%',
         '22': '5.5rem',
         '68': '17rem',
         '90': '22.5rem',
@@ -43,6 +47,8 @@ const config: Config = {
     },
     
   },
-  plugins: [],
+  plugins: [
+    flowbyte.plugin(),
+  ],
 };
 export default config;
