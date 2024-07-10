@@ -1,32 +1,38 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 /*----Self imports----*/
 //----Modelos----//
 import Buttons from "./models/Buttons";
 import Texts from "./models/Text";
 import Swipers from "./models/Swipers";
 import Cards from "./models/Cards";
+import ProyectosPrincipales from "./models/Proyectos/Instances";
 //----Componentes----//
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import DynamicModal from "./components/modal/DynamicModal";
+import DynamicModal from "./components/DynamicModal";
 /*----Íconos----*/
 import { FaGithub, FaWhatsapp, FaLinkedin,  } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
+import Proyecto from "./models/Proyectos/Proyecto";
 
 export default function Home():React.JSX.Element {
   //----------Modal handlers----------//
   const [openModal, setOpenModal] = useState(false);
-  const handleOpenModal = ():void => {
+  const [modalData,setModalData] = useState(ProyectosPrincipales[0]);
+
+  const handleOpenModal = (proyecto:Proyecto) => {
+    setModalData(proyecto);
     setOpenModal(true);
   };
 
   const handleCloseModal = ():void => {
     setOpenModal(false);
+    setModalData(ProyectosPrincipales[0]);
   };
 
   return (
-    <>
+    <Suspense fallback={<article>Cargando...</article>}>
         <Header />
         {/* 1st: Section: Introduction */}
         <section className="bg-tertiary py-24 dark:bg-primary ">
@@ -117,22 +123,28 @@ export default function Home():React.JSX.Element {
           </div>
         </section>
         {/* 4th Section: Projects */}
-        <section className="py-20 md:py-32 bg-tertiary">
+        <section className="py-20 md:py-24 bg-tertiary dark:bg-primary">
           <article className="mx-6 sm:mx-32 md:m-auto md:w-2/3 lg:w-4/5 xl:w-2/3 lg:min-w-[984px] lg:gap-16">
-            <h2 className="text-5xl font-bolder">Proyectos</h2>
-            <p className="xl:w-1/2 text-secondary text-xl my-6">Algunos de mis proyectos, puede ver detalles haciendo click en ellos.</p>
+            <h2 className="text-5xl font-bolder dark:text-white">Proyectos</h2>
+            <p className="xl:w-1/2 text-secondary dark:text-white text-xl my-6">Algunos de mis proyectos.</p>
             <article className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-3 xl:gap-6">
-              <article className="w-full" onClick={handleOpenModal}>
-                <img src="/abanner.jpg" alt="" className="object-cover h-64"/>
-              </article>
+              {ProyectosPrincipales.map(proyecto => (
+                <article className="w-full grid place-items-center cursor-pointer" onClick={()=> handleOpenModal(proyecto)}>
+                  <img src={`${proyecto.getImage()}`} alt={proyecto.getName()} className="object-cover h-64"/>
+                </article>
+              ))}
+
+            {openModal && (<DynamicModal onClose={handleCloseModal} proyecto={modalData} />)}
             </article>
+            <div className="mt-12 flex justify-center">
+              <Buttons.PrimaryButton text="ver más"  />
+            </div>
           </article>
           {/* Proyectos */}
         </section>
 
         <Footer />
         {/* Componentes extra */}
-        {openModal && (<DynamicModal onClose={handleCloseModal} />)}
-    </>
+    </Suspense>
   );
 }
