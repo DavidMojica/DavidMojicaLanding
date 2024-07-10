@@ -6,6 +6,7 @@ type AvailableAndUrl = {
 }
 
 class Proyecto {
+    private id:number;
     private Name:string;
     private Description:React.JSX.Element;
     private MadeWith:string;
@@ -14,7 +15,8 @@ class Proyecto {
     private Preview:AvailableAndUrl;
     private SourceCode:AvailableAndUrl;
 
-    constructor (name:string, description:React.JSX.Element, madeWith:string, date:string, imgUrl:string, preview:AvailableAndUrl, sourceCode:AvailableAndUrl){
+    constructor (id:number,name:string, description:React.JSX.Element, madeWith:string, date:string, imgUrl:string, preview:AvailableAndUrl, sourceCode:AvailableAndUrl){
+        this.id = id;
         this.Name = name;
         this.Description = description;
         this.MadeWith = madeWith;

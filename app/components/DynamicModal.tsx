@@ -41,13 +41,13 @@ const DynamicModal: React.FC<DisplayModalProps> = ({ onClose, proyecto }) => {
                     </article>
                 </section>
                 <section className="py-6 block md:flex md:flex-wrap">
-                    <article className="px-4 md:w-2/3 h-20">
+                    <article className="px-4 md:w-2/3">
                         <Texts.UnderlinedTitle text={`${proyecto.getName()}`} size="text-3xl md:text-4xl" />
                         <p className="text-secondary dark:text-white my-4 pb-6">
                             {proyecto.getDescription()}
                         </p>
                     </article>
-                    <article className="px-4 md:w-1/3 h-20">
+                    <article className="px-4 md:w-1/3">
                         <h4 className="text-2xl dark:text-white font-bolder">Desarrollado con</h4>
                         <p className="text-secondary dark:text-white">{proyecto.getMadeWith()}</p>
                         <h4 className="text-2xl dark:text-white font-bolder mt-4 ">Fecha</h4>
