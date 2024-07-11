@@ -18,6 +18,10 @@ interface DisplayModalProps {
 const DynamicModal: React.FC<DisplayModalProps> = ({ onClose, proyecto }) => {
     return (
         <Modal dismissible show={true} onClose={onClose} size={'4xl'}>
+            <Modal.Header>
+
+                
+            </Modal.Header>
             <Modal.Body >
                 <section className="space-y-6">
                     <img src={`${proyecto.getImage()}`} alt="" className="w-full object-contain max-h-124" />
