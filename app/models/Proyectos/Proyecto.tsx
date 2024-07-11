@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Key } from "react";
 
 type AvailableAndUrl = {
     available:boolean,
@@ -6,7 +6,7 @@ type AvailableAndUrl = {
 }
 
 class Proyecto {
-    private id:number;
+    public id:Key;
     private Name:string;
     private Description:React.JSX.Element;
     private MadeWith:string;

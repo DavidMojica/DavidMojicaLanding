@@ -17,7 +17,10 @@ class Cards{
         0:'NEW',
         1:'JUNIOR',
         2:'MID',
-        3:'SENIOR'
+        3:'SENIOR',
+        4:'#',
+        5:'CORREO',
+        6: 'DETALLES'
     };
 
     constructor(){}

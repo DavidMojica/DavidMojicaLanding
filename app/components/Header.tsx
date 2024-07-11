@@ -19,7 +19,7 @@ const Header = ():React.JSX.Element => {
       };
 
   return (
-    <header className='sticky top-0 shadow-[rgba(0,0,4,0.1)_0px_0px_20px] z-50'>
+    <header className='sticky top-0 shadow-b-lg dark:shadow-gray-800 z-50'>
         <nav className='flex justify-around lg:justify-between py-6 px-2 lg:px-10 bg-white dark:bg-bgdark text-primary dark:text-white'>
             <h2>
                 <Texts.UnderlinedTitle text='David Mojica' size='text-3xl md:text-4xl' />
