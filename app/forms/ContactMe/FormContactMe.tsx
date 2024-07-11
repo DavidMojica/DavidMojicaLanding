@@ -77,7 +77,7 @@ const FormContactMe:React.FC = () =>{
             return;
         }        
 
-        emailjs.sendForm(emailjsService, emailjsTemplate, e.target , publicEmailJs ).then((success)=>{
+        emailjs.sendForm(emailjsService, emailjsTemplate, e.target as HTMLFormElement , publicEmailJs ).then((success)=>{
             setShowAlert(2);
             setEvent('Enviado con exito');
             setFormData(initialFormData);
