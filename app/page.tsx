@@ -119,7 +119,7 @@ export default function Home():React.JSX.Element {
                     <Cards.ExperienceCard title="TENSORFLOW" message="< 6 Meses" size="w-full" level={0} />
                   </article>
                   <Link href={'/services#benefits'}>
-                  <Buttons.PrimaryButton text="Ver herramientas" margin="mt-12" />
+                    <Buttons.PrimaryButton text="Ver herramientas" margin="mt-12" />
                   </Link>
                 </section>
 
@@ -144,7 +144,9 @@ export default function Home():React.JSX.Element {
             {openModal && (<DynamicModal onClose={handleCloseModal} proyecto={modalData} />)}
             </article>
             <div className="mt-12 flex justify-center">
-              <Buttons.PrimaryButton text="ver más"  />
+              <Link href={'/projects'}>
+                <Buttons.PrimaryButton text="ver más"  />
+              </Link>
             </div>
           </article>
         </section>
