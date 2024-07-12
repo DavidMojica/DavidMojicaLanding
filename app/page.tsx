@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, Suspense } from "react";
 import FormContactMe from "./forms/ContactMe/FormContactMe";
+import Link from "next/link";
 /*----Self imports----*/
 //----Modelos----//
 import Buttons from "./models/Buttons";
@@ -16,9 +17,6 @@ import DynamicModal from "./components/DynamicModal";
 import { FaGithub, FaWhatsapp, FaLinkedin,  } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 import Proyecto from "./models/Proyectos/Proyecto";
-
-//*-----Variables-----*//
-const public_hcaptcha_sitekey = "d55018e4-c164-4cfa-b3ce-38d4ed7e53e8";
 
 export default function Home():React.JSX.Element {
   //----------Modal handlers----------//
@@ -103,13 +101,16 @@ export default function Home():React.JSX.Element {
                       <Cards.SimpleCard title="100% Eficiencia" message="Sus aplicaciones serán optimizadas para ser rápidas y eficientes. " size="w-full h-full" /> */}
                   </article>
 
-                  <Buttons.PrimaryButton text="Ver  beneficios" margin="mt-12" />
+                  <Link href={'/services'}>
+                    <Buttons.PrimaryButton text="Productos / Servicios" margin="mt-12" />
+                  
+                  </Link>
                 </section>
 
                 {/* Commercial experience */}
                 <section className="py-16">
                   <h2 className="text-center xl:text-left">
-                    <Texts.UnderlinedTitle text="¿Cual es mi experiencia comercial?" size="text-4xl"  />
+                    <Texts.UnderlinedTitle text="¿Cuales son mis herramientas?" size="text-4xl"  />
                   </h2>
                   <article className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-3 xl:gap-6 mt-12">
                     <Cards.ExperienceCard title="DJANGO" message="2+ Años" size="w-full" level={3} />
@@ -117,8 +118,9 @@ export default function Home():React.JSX.Element {
                     <Cards.ExperienceCard title="NEXT.JS" message="8 Meses" size="w-full" level={1} />
                     <Cards.ExperienceCard title="TENSORFLOW" message="< 6 Meses" size="w-full" level={0} />
                   </article>
-
+                  <Link href={'/services#benefits'}>
                   <Buttons.PrimaryButton text="Ver herramientas" margin="mt-12" />
+                  </Link>
                 </section>
 
             </article>
