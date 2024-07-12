@@ -30,8 +30,8 @@ const Header = ():React.JSX.Element => {
                 <ul className='hidden lg:flex '>
                     <li className='px-4 flex items-center'><Link href={'/'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><IoHomeOutline/><span className='ps-2'>Home</span> </p> </Link> </li>
                     <li className='px-4 flex items-center'><Link href={'/services'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><GrServices /><span className='ps-2'>Servicios</span></p> </Link></li>
-                    <li className='px-4 flex items-center'><Link href={'#'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><PiProjectorScreen /><span className='ps-2'>Proyectos</span></p> </Link></li>
-                    <li className='px-4 flex items-center'><Link href={'#'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><IoChatboxEllipsesOutline /><span className='ps-2'>Contacto</span></p></Link></li>
+                    <li className='px-4 flex items-center'><Link href={'/projects'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><PiProjectorScreen /><span className='ps-2'>Proyectos</span></p> </Link></li>
+                    <li className='px-4 flex items-center'><Link href={'/contact'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><IoChatboxEllipsesOutline /><span className='ps-2'>Contacto</span></p></Link></li>
                 </ul>
                 <article className='ps-0 lg:ps-6 flex items-center'>
                     <div className='pe-4 lg:pe-0'>
