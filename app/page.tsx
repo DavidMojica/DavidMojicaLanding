@@ -54,13 +54,13 @@ export default function Home():React.JSX.Element {
                     <li><a href="mailto:davidmojicav@gmail.com" target='_blank' className="hover:text-primary duration-300"><SiGmail/></a></li>
                 </ul>
             </section>
-            <a href="">
-              <Buttons.PrimaryButton text="abrir cv" />
+            <a href="#trusted_by">
+              <Buttons.PrimaryButton text="Empezar" />
             </a>
           </article>
         </section>
         {/* 2nd Section: Trusted & Swiper */}
-        <section className="bg-white py-12 xl:py-24 overflow-x-hidden dark:bg-bgdark">
+        <section className="bg-white py-12 xl:py-24 overflow-x-hidden dark:bg-bgdark" id="trusted_by">
           <h2 className="w-4/5 md:w-2/3 m-auto ">
             <Texts.UnderlinedTitle text="Confiado por" size="text-4xl md:text-5xl" />
           </h2>
@@ -83,26 +83,22 @@ export default function Home():React.JSX.Element {
                   en Mayo de 2024, pero me he desempeñado como desarrollador independiente durante más de 2 años.
                 </p>
                 <h2 className="pt-12">
-                  <Texts.UnderlinedTitle text="¿Qué puedo hacer?" size="text-4xl"  />
+                  <Texts.UnderlinedTitle text="Servicios" size="text-4xl"  />
                 </h2>
-                <p className="text-secondary dark:text-white pt-8 text-xl tracking-wide leading-6 xl:leading-8 ">
-                  Durante mi trayectoria, he creado sitios web de comercio electrónico, sistemas de control de inventario, sistemas internos para empresas, plataformas web, diseño web UX/UI, bots, aplicaciones para escritorio, páginas web,
-                  sistemas de análisis de datos, dashboards y gráficos con Power BI, Metabase y otras herramientas, aplicaciones para dispositivos móviles, plataformas inmobiliarias, también he participado en la creación y desarrollo de videojuegos.
-                </p>
 
                 {/* Simplecards */}
                 <section className="mt-12">
                   <article className="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-3 xl:gap-6 ">
-                      <Cards.SimpleCard title="Aplicaciones" message="Apps web, móviles y de escritorio con y sin bases de datos." size="w-full h-full" />
-                      <Cards.SimpleCard title="Diseño UX/UI" message="Diseños intuitivos, atractivos y eficaces en sus aplicaciones." size="w-full h-full" />
-                      <Cards.SimpleCard title="Big Data" message="Dashboards, historias de usuario y gráficos de sus datos recopilados." size="w-full h-full" />
-                      <Cards.SimpleCard title="De 0 a 100" message="Sus aplicaciones desde cero hasta su lanzamiento en internet." size="w-full h-full" />
-                      {/* <Cards.SimpleCard title="Desarrollo IOT" message="Programación para dispositivos electrónicos conectados a internet." size="w-full h-full" />
-                      <Cards.SimpleCard title="100% Eficiencia" message="Sus aplicaciones serán optimizadas para ser rápidas y eficientes. " size="w-full h-full" /> */}
+                    <Cards.SimpleCard title="Aplicaciones" message="Apps web, móviles y de escritorio con y sin bases de datos." size="w-full h-full" />
+                    <Cards.SimpleCard title="Landing Pages" message="Paginas web simples con llamado a la acción claro y diseño atractivo." size="w-full h-full" />
+                    <Cards.SimpleCard title="Ecommerce" message="Integre pagos en línea y en tiempo real a sus aplicaciones." size="w-full h-full" />
+                    <Cards.SimpleCard title="Bases de Datos" message="Integración de bases de datos a sus aplicaciones y servicios." size="w-full h-full" />
+                    <Cards.SimpleCard title="API's" message="Integración de API's a sus aplicaciones y servicios." size="w-full h-full" />
+                    <Cards.SimpleCard title="Big Data" message="Dashboards, historias de usuario y gráficos de sus datos recopilados." size="w-full h-full" />
                   </article>
 
                   <Link href={'/services'}>
-                    <Buttons.PrimaryButton text="Productos / Servicios" margin="mt-12" />
+                    <Buttons.PrimaryButton text="Ver más" margin="mt-12" />
                   
                   </Link>
                 </section>
@@ -110,8 +106,11 @@ export default function Home():React.JSX.Element {
                 {/* Commercial experience */}
                 <section className="py-16">
                   <h2 className="text-center xl:text-left">
-                    <Texts.UnderlinedTitle text="¿Cuales son mis herramientas?" size="text-4xl"  />
+                    <Texts.UnderlinedTitle text="Herramientas / Lenguajes" size="text-4xl"  />
                   </h2>
+                  <p className="text-secondary dark:text-white mt-4 text-xl">
+                    Se desarrolla bajo la herramienta o lenguaje que prefieras.
+                  </p>
                   <article className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-3 xl:gap-6 mt-12">
                     <Cards.ExperienceCard title="DJANGO" message="2+ Años" size="w-full" level={3} />
                     <Cards.ExperienceCard title="ASP.NET" message="1.5 Años" size="w-full" level={2} />
@@ -119,7 +118,7 @@ export default function Home():React.JSX.Element {
                     <Cards.ExperienceCard title="TENSORFLOW" message="< 6 Meses" size="w-full" level={0} />
                   </article>
                   <Link href={'/services#benefits'}>
-                    <Buttons.PrimaryButton text="Ver herramientas" margin="mt-12" />
+                    <Buttons.PrimaryButton text="Ver más" margin="mt-12" />
                   </Link>
                 </section>
 

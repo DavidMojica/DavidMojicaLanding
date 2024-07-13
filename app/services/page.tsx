@@ -6,6 +6,7 @@ import Texts from '../models/Text';
 import Cards from '../models/Cards';
 import Buttons from '../models/Buttons';
 import Swipers from '../models/Swipers';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -27,7 +28,7 @@ const page = () => {
                 <Cards.SimpleCard title="Inventarios" message="Creación de sistemas de control de inventario y administración." size="w-full h-full" />
                 <Cards.SimpleCard title="Apps Móviles" message="Desarrollo de aplicaciones para celulares y dispositivos de bolsillo." size="w-full h-full" />
                 <Cards.SimpleCard title="Mantenimiento" message="Servicio de mantenimiento y actualización a sus softwares." size="w-full h-full" />
-                <Cards.SimpleCard title="Otros servicios" message="¿Interesado en un otro servicio?" size="w-full h-full" buttonMsg={'Contacto'} />
+                <Cards.SimpleCard title="Otros servicios" message="¿Interesado en un otro servicio?" size="w-full h-full" buttonMsg={'Contacto'} buttonRoute='/contact' />
 
             </article>
 
@@ -71,7 +72,9 @@ const page = () => {
                     <Cards.ExperienceCard title="Canva" message="< 6 Meses" size="w-full" level={0} />
                 </article>
                 <p className='text-xl text-secondary py-6'>Se hace uso de más herramientas. Pregunta sin compromiso si tienes dudas.</p>
-                <Buttons.PrimaryButton text='Contacto' />
+                <Link href={'/contact'}>
+                    <Buttons.PrimaryButton text='Contacto' />
+                </Link>
             </section>
         </section>
         <Footer />
