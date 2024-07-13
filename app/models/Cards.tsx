@@ -1,6 +1,7 @@
 import React from "react";
 import Texts from "./Text";
 import Buttons from "./Buttons";
+import Link from "next/link";
 
 interface CardProps{
     title:string,
@@ -8,6 +9,7 @@ interface CardProps{
     size:string,
     level?:number,
     buttonMsg?:string | null,
+    buttonRoute?:string,
 
 }
 
@@ -28,14 +30,18 @@ class Cards{
 
     constructor(){}
 
-    public static SimpleCard({title, message, size, buttonMsg=null}:CardProps):React.JSX.Element{
+    public static SimpleCard({title, message, size, buttonMsg=null, buttonRoute=''}:CardProps):React.JSX.Element{
         return(
             <article className={`shadow-xl dark:shadow-md dark:shadow-gray-500 p-10 rounded-xl ${size}`}>
                 <h3><Texts.UnderlinedTitle text={title} size="text-3xl" /></h3>
                 <p className="md:text-xl mt-6 text-secondary dark:text-white overflow-hidden">
                     {message}
                 </p>
-                {buttonMsg && <Buttons.PrimaryButton text={buttonMsg} margin="mt-4" />}
+                {buttonMsg &&  
+                    <Link href={buttonRoute}>
+                        <Buttons.PrimaryButton text={buttonMsg} margin="mt-4" />
+                    </Link> 
+                }
             </article>
         )
     }

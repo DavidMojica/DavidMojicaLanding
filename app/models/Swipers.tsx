@@ -57,6 +57,9 @@ class Swipers{
                     <img src="/logo_arriendofinca.png" alt="" className="object-contain h-full w-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
+                    <img src="/logo_davidastore.png" alt="" className="object-contain h-full w-full" />
+                </SwiperSlide>
+                <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
                     <img src="/logo_bello.png" alt="" className="object-contain h-full w-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
@@ -67,6 +70,9 @@ class Swipers{
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
                     <img src="/logo_arriendofinca.png" alt="" className="object-contain h-full w-full" />
+                </SwiperSlide>
+                <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
+                    <img src="/logo_davidastore.png" alt="" className="object-contain h-full w-full" />
                 </SwiperSlide>
             </Swiper>
         )
