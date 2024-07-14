@@ -51,16 +51,16 @@ const Header = ():React.JSX.Element => {
         <aside className={`fixed top-22 bottom-0 right-0 w-3/4 bg-white dark:bg-bgdark dark:text-white duration-500 ease-in-out transform ${sidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
             <ul className='text-xl '>
                 <li className='mx-4 my-6 flex items-center'>
-                    <Link href={'#'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><IoHomeOutline/><span className='ps-2'>Home</span></p></Link>
+                    <Link href={'/'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><IoHomeOutline/><span className='ps-2'>Home</span></p></Link>
                 </li>
                 <li className='mx-4 my-6 flex items-center'>
-                    <Link href={''}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><FiUser /><span className='ps-2'>Sobre mí</span></p></Link>
+                    <Link href={'/services'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><GrServices /><span className='ps-2'>Servicios</span></p></Link>
                 </li>
                 <li className='mx-4 my-6 flex items-center'>
-                    <Link href={''}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><PiProjectorScreen /><span className='ps-2'>Proyectos</span></p></Link>
+                    <Link href={'/projects'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><PiProjectorScreen /><span className='ps-2'>Proyectos</span></p></Link>
                 </li>
                 <li className='mx-4 my-6 flex items-center'>
-                    <Link href={''}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><IoChatboxEllipsesOutline /><span className='ps-2'>Contacto</span></p></Link>
+                    <Link href={'/contact'}><p className='flex items-center p-2 rounded-md hover:bg-tertiary text-center dark:hover:bg-slate-700 duration-300'><IoChatboxEllipsesOutline /><span className='ps-2'>Contacto</span></p></Link>
                 </li>
             </ul>
             <section className='absolute w-full bottom-0 p-3 '>
