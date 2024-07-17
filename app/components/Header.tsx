@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 // Self imports
 import Texts from '../models/Text';
@@ -5,10 +6,8 @@ import Texts from '../models/Text';
 import { IoHomeOutline, IoChatboxEllipsesOutline, IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 import { FaGithub, FaWhatsapp, FaLinkedin,  } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
-import { FiUser } from "react-icons/fi";
 import { PiProjectorScreen } from "react-icons/pi";
 import { GrServices } from "react-icons/gr";
-import Link from 'next/link';
 //Components
 import Switch from './Switch';
 
@@ -22,9 +21,10 @@ const Header = ():React.JSX.Element => {
   return (
     <header className='sticky top-0 shadow-b-lg dark:shadow-gray-800 z-50'>
         <nav className='flex justify-around lg:justify-between py-6 px-2 lg:px-10 bg-white dark:bg-bgdark text-primary dark:text-white'>
-            <h2>
-                <Texts.UnderlinedTitle text='David Mojica' size='text-3xl md:text-4xl' />
-            </h2>
+            <h1 className='text-primary dark:text-white font-bolder underline text-3xl md:text-4xl decoration-tertiary dark:decoration-primary'>
+                David Mojica
+            </h1>
+
 
             <section className='flex text-xl font-normal'>
                 <ul className='hidden lg:flex '>

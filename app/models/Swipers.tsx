@@ -1,9 +1,11 @@
 import React from "react";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { img_logo_height, img_logo_width } from "../variables";
 
 import Cards from "./Cards";
 
@@ -45,35 +47,36 @@ class Swipers{
             
             >
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_bello.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_bello.png" alt="bello.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_gsv.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_gsv.png" alt="gsv.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_ducaplast.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_ducaplast.png"  alt="ducaplast.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_arriendofinca.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_arriendofinca.png" alt="arriendifinca.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_davidastore.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_davidastore.png" alt="davidastore.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_bello.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_bello.png" alt="bello.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_gsv.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_gsv.png" alt="gsv.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_ducaplast.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_ducaplast.png"  alt="ducaplast.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_arriendofinca.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_arriendofinca.png" alt="arriendifinca.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
-                    <img src="/logo_davidastore.png" alt="" className="object-contain h-full w-full" />
+                    <Image src="/logo_davidastore.png" alt="davidastore.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
+
             </Swiper>
         )
     }
