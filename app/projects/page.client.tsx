@@ -8,14 +8,14 @@ import DynamicModal from '../components/DynamicModal';
 /*----Models----*/
 import Proyecto from '../models/Proyectos/Proyecto';
 /*----Forms----*/
-import ProyectosPrincipales from '../models/Proyectos/Instances';
+import { ProyectosAll } from '../models/Proyectos/Instances';
 
 import { img_custom_height, img_custom_width } from '../variables';
 
 const PageClient = () => {
     //----------Modal handlers----------//
     const [openModal, setOpenModal] = useState(false);
-    const [modalData,setModalData] = useState(ProyectosPrincipales[0]);
+    const [modalData,setModalData] = useState(ProyectosAll[0]);
 
     const handleOpenModal = (proyecto:Proyecto) => {
         setModalData(proyecto);
@@ -24,7 +24,7 @@ const PageClient = () => {
 
     const handleCloseModal = ():void => {
         setOpenModal(false);
-        setModalData(ProyectosPrincipales[0]);
+        setModalData(ProyectosAll[0]);
     };
   return (
     <div>
@@ -34,9 +34,9 @@ const PageClient = () => {
                 <h2 className="text-5xl font-bolder dark:text-white">Proyectos</h2>
                 <p className="xl:w-1/2 text-secondary dark:text-white text-xl my-6">Algunos de mis proyectos.</p>
                 <article className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-3 xl:gap-6">
-                {ProyectosPrincipales.map(proyecto => (
+                {ProyectosAll.map(proyecto => (
                     <article className="w-full grid place-items-center cursor-pointer" onClick={()=> handleOpenModal(proyecto)}>
-                        <Image src={`${proyecto.getImage()}`} alt={proyecto.getName()} className="object-cover h-64 rounded-xl" width={img_custom_width} height={img_custom_height}/>
+                        <Image src={`${proyecto.getImage}`} alt={proyecto.getName} className="object-cover h-64 rounded-xl hover:scale-110 duration-300 ease-in-out" width={img_custom_width} height={img_custom_height}/>
                     </article>
                 ))}
 

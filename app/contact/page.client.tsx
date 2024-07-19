@@ -32,7 +32,6 @@ const PageClient = () => {
                 </section>
             </article>
             </section>
-
         <Footer />
     </div>
   )

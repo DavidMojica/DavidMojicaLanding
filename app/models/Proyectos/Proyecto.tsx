@@ -14,8 +14,9 @@ class Proyecto {
     private ImgURL:string;
     private Preview:AvailableAndUrl;
     private SourceCode:AvailableAndUrl;
+    private Downloadeable:AvailableAndUrl;
 
-    constructor (id:number,name:string, description:React.JSX.Element, madeWith:string, date:string, imgUrl:string, preview:AvailableAndUrl, sourceCode:AvailableAndUrl){
+    constructor (id:number,name:string, description:React.JSX.Element, madeWith:string, date:string, imgUrl:string, preview:AvailableAndUrl, sourceCode:AvailableAndUrl, downloadeable:AvailableAndUrl={available:false, URL:undefined}){
         this.id = id;
         this.Name = name;
         this.Description = description;
@@ -24,43 +25,53 @@ class Proyecto {
         this.ImgURL = imgUrl;
         this.Preview = preview;
         this.SourceCode = sourceCode;
+        this.Downloadeable = downloadeable;
     }
 
-    getName():string{
+    get getName():string{
         return this.Name;
     }
 
-    getDescription():React.JSX.Element{
+    get getDescription():React.JSX.Element{
         return this.Description;
     }
 
-    getMadeWith():string{
+    get getMadeWith():string{
         return this.MadeWith;
     }
 
-    getDate():string{
+    get getDate():string{
         return this.Date;
     }
 
-    getImage():string{
+    get getImage():string{
         return this.ImgURL;
     }
 
-    checkPreview():boolean{
+    get checkPreview():boolean{
         return this.Preview.available;
     }
 
-    getPreview():string | undefined{
+    get getPreview():string | undefined{
         if (this.Preview.available) return this.Preview.URL;
         return undefined;
     }
 
-    checkSourceCode():boolean{
+    get checkSourceCode():boolean{
         return this.SourceCode.available;
     }
 
-    getSourceCode():string | undefined{
+    get getSourceCode():string | undefined{
         if (this.SourceCode.available) return this.SourceCode.URL;
+        return undefined;
+    }
+
+    get checkDownlodeable():boolean{
+        return this.Downloadeable.available;
+    }
+
+    get getDownloadLink(): string | undefined{
+        if (this.Downloadeable.available) return this.Downloadeable.URL;
         return undefined;
     }
 }

@@ -57,6 +57,19 @@ const ProyectoSkyHub = new Proyecto(4, 'SkyHub',
     '04/24', '/previews/skyhub.png', {available:true, URL:'https://skyhub2.vercel.app/'}, {available:true, URL:'https://github.com/DavidMojica/SkyHub'}
 )
 
+const ProyectoAlkostoPowerBI = new Proyecto(6, 'Dashboard Alkosto',
+    <>
+        Dashboard empresarial donde se representa la utilidad y los márgenes de ganancia interna en el periodo 2019 - 2021. <br />
+        Cada gráfico presenta información valiosa y es completamente interactivo, permitiendo la filtración dinámica de datos para descubrir patrones y obtener insights útiles. <br /> <br />
+        Nota <br />
+        Tanto los datos como la empresa mostrada fueron alterados con el fin de dar a conocer un ejemplo de resultado final. Los datos de cada empresa en un ámbito real son protegidos y sólo pueden ser accedidos por personas con acceso autorizado a ellos. <br /> <br />
+        Nota de descarga <br />
+        Puede descargar y visualizar el Dashboard si tiene instalado Microsoft Power BI Desktop en su PC, de lo contrario, no puede.
+    </>,
+    'Power BI', '06/24', '/previews/alkosto.png', {available:false, URL:undefined}, {available: false, URL:undefined}, {available:true, URL:'/downloads/reporte.pbix'}
+)
+
+
 const ProyectoAstroid = new Proyecto (5, 'Astroid',
     <>
         Aplicación móvil que muestra información útil sobre los objetos celestes, se comsumen diversas API como fuentes de información, como por ejemplo la API de la Nasa, para mayor precisión de los datos. 
@@ -65,13 +78,17 @@ const ProyectoAstroid = new Proyecto (5, 'Astroid',
     '04/24', '/previews/astroid.png', {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/Astroid'} 
 )
 
-const ProyectosPrincipales:Proyecto[] = [
+export const ProyectosPrincipales:Proyecto[] = [
     ProyectoDucaplast,
     ProyectoSaludMental,
     ProyectoArriendofinca,
     ProyectoDavidaStore,
     ProyectoSkyHub,
-    ProyectoAstroid,
+    ProyectoAlkostoPowerBI,
 ];
 
-export default ProyectosPrincipales;
+
+export const ProyectosAll:Proyecto[] = [
+    ...ProyectosPrincipales,
+    ProyectoAstroid
+]
