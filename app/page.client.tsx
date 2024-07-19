@@ -9,7 +9,7 @@ import Buttons from "./models/Buttons";
 import Texts from "./models/Text";
 import Swipers from "./models/Swipers";
 import Cards from "./models/Cards";
-import ProyectosPrincipales from "./models/Proyectos/Instances";
+import { ProyectosPrincipales } from "./models/Proyectos/Instances";
 //----Componentes----//
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -139,7 +139,7 @@ export default function HomeClient():React.JSX.Element {
             <article className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-3 xl:gap-6">
               {ProyectosPrincipales.map(proyecto => (
                 <article className="w-full grid place-items-center cursor-pointer " onClick={()=> handleOpenModal(proyecto)}>
-                  <Image src={`${proyecto.getImage()}`} alt={proyecto.getName()} className="object-cover h-64 rounded-xl" width={img_custom_width} height={img_custom_height}/>
+                  <Image src={`${proyecto.getImage}`} alt={proyecto.getName} className="object-cover h-64 rounded-xl hover:scale-110 duration-300 ease-in-out" width={img_custom_width} height={img_custom_height}/>
                 </article>
               ))}
 
