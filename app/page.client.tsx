@@ -52,10 +52,10 @@ export default function HomeClient():React.JSX.Element {
             </p>
             <section className='text-secondary  dark:text-tertiary my-6'>
                 <ul className='flex justify-center items-center gap-5 text-2xl'>
-                    <li><a href="https://github.com/DavidMojica" target='_blank' className="hover:text-primary duration-300"><FaGithub/></a></li>
-                    <li><a href="https://wa.me/573197750000" target='_blank' className="hover:text-primary duration-300"><FaWhatsapp/></a></li>
-                    <li><a href="https://www.linkedin.com/in/david-mojica-vergara-a3898a265/" target='_blank' className="hover:text-primary duration-300"><FaLinkedin/></a></li>
-                    <li><a href="mailto:davidmojicav@gmail.com" target='_blank' className="hover:text-primary duration-300"><SiGmail/></a></li>
+                    <li><a href="https://github.com/DavidMojica" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><FaGithub/></a></li>
+                    <li><a href="https://wa.me/573197750000" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><FaWhatsapp/></a></li>
+                    <li><a href="https://www.linkedin.com/in/david-mojica-vergara-a3898a265/" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><FaLinkedin/></a></li>
+                    <li><a href="mailto:davidmojicav@gmail.com" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><SiGmail/></a></li>
                 </ul>
             </section>
             <a href="#trusted_by">
