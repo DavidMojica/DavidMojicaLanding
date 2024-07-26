@@ -78,6 +78,25 @@ const ProyectoAstroid = new Proyecto (5, 'Astroid',
     '04/24', '/previews/astroid.png', {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/Astroid'} 
 )
 
+
+const ProyectoArduinoSemaforo = new Proyecto (7, "Semaforo inteligente",
+    <>
+        Semaforo inteligente que al detectar a un peatón cerca, inicia automáticamente el ciclo de cambio de luces hacia el rojo después de cierto tiempo de enfriamiento. <br />
+        El sistema está constituido por una placa Arduíno y un sensor de ultrasonido para detectar la proximidad de la persona. <br /> <br />
+        Se puede replicar a escala y hacerlo funcionar en cualquier semaforo donde se instale.
+    </>,
+    'Arduino, C++', '09/23', '/previews/semaforointeligente.png', {available:true, URL:'https://wokwi.com/projects/375798460804393985'}, {available:true, URL:'https://wokwi.com/projects/375798460804393985'}
+)
+
+const ProyectoJumbleBot = new Proyecto (8, "Jumble - Bot de Discord",
+    <>
+        Jumble es un bot que funciona dentro de la aplicación de Discord. Dicho bot puede iniciar una partida de Jumble en inglés, español o portugués. <br />
+        Dependiendo del idioma seleccionado, el bot arroja varios carácteres al azar con los que los jugadores deben de formar palabras en dicho idioma para ganar puntos y al final gana quien más puntos haya hecho en la partida. <br />
+        Hay entre 250.000 y 350.000 palabras disponibles por idioma.
+    </>,
+    'Python, Discord', '08/23', '/previews/jumble.png', {available:false, URL:undefined}, {available: true, URL:'https://github.com/DavidMojica/Jumble'}
+)
+
 export const ProyectosPrincipales:Proyecto[] = [
     ProyectoDucaplast,
     ProyectoSaludMental,
@@ -90,5 +109,7 @@ export const ProyectosPrincipales:Proyecto[] = [
 
 export const ProyectosAll:Proyecto[] = [
     ...ProyectosPrincipales,
-    ProyectoAstroid
+    ProyectoAstroid,
+    ProyectoArduinoSemaforo,
+    ProyectoJumbleBot
 ]

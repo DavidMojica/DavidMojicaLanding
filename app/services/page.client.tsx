@@ -66,8 +66,8 @@ const PageClient = () => {
                     <Cards.ExperienceCard title="TypeScript" message="1.3 Años" size="w-full" level={2} />
                     <Cards.ExperienceCard title="React" message="< 1 Año" size="w-full" level={1} />
                     <Cards.ExperienceCard title="C" message="< 3 Meses" size="w-full" level={0} />
-                    <Cards.ExperienceCard title="Metablase" message="2+ Años" size="w-full" level={3} />
-                    <Cards.ExperienceCard title="Pandas (Python)" message="1.5 Años" size="w-full" level={2} />
+                    <Cards.ExperienceCard title="Metabase" message="2+ Años" size="w-full" level={3} />
+                    <Cards.ExperienceCard title="Power BI" message="1.5 Años" size="w-full" level={2} />
                     <Cards.ExperienceCard title="Three.JS" message="< 1 Año" size="w-full" level={1} />
                     <Cards.ExperienceCard title="Canva" message="< 6 Meses" size="w-full" level={0} />
                 </article>
