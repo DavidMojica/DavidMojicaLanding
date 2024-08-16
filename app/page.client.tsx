@@ -45,8 +45,7 @@ export default function HomeClient():React.JSX.Element {
         <section className="bg-tertiary py-24 dark:bg-primary ">
           <article className="max-w-2xl grid place-items-center mx-8 md:mx-auto text-center">
             <Image src="/photo.jpeg" alt="foto.png" className="size-60 lg:size-72 rounded-full" width={img_principal_width} height={img_principal_height} />
-            <p className="text-secondary dark:text-tertiary mt-4 text-xl"><span className="font-bold">David Mojica</span>, freelancer en</p>
-            <h2 className="text-primary dark:text-white text-3xl md:text-5xl mt-4 font-bolder">Desarrollo de Software</h2>
+            <h2 className="text-primary dark:text-white text-3xl md:text-5xl mt-4 font-bolder">David Mojica <br /> Desarrollador de Software</h2>
             <p className="text-secondary dark:text-tertiary mt-4 md:text-xl ">
             Creación, mantenimiento y diseño de soluciones tecnológicas a la medida con más de <strong>2 años de experiencia</strong> en la industria del software.
             </p>
