@@ -31,7 +31,7 @@ const PageClient = () => {
         <Header />
             <section className="py-20 md:py-24 bg-tertiary dark:bg-primary">
             <article className="mx-6 sm:mx-32 md:m-auto md:w-2/3 lg:w-4/5 xl:w-2/3 lg:min-w-[984px] lg:gap-16">
-                <h2 className="text-5xl font-bolder dark:text-white">Proyectos</h2>
+                <h1 className="text-5xl font-bolder dark:text-white">Proyectos</h1>
                 <p className="xl:w-1/2 text-secondary dark:text-white text-xl my-6">Algunos de mis proyectos.</p>
                 <article className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-3 xl:gap-6">
                 {ProyectosAll.map(proyecto => (

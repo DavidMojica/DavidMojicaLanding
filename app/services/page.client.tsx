@@ -15,7 +15,7 @@ const PageClient = () => {
         {/* Simplecards */}
         <section className="py-8 bg-white dark:bg-bgdark">
             <article className='mx-6 sm:mx-8 md:m-auto md:w-2/3 lg:w-4/5 xl:w-2/3 m-auto'>
-                <Texts.UnderlinedTitle text='Servicios' size='text-3xl lg:text-6xl mb-12 ml-6' />
+                <h1><Texts.UnderlinedTitle text='Servicios de Software' size='text-3xl lg:text-6xl mb-12 ml-6' /></h1>
                 <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 place-items-center gap-3 xl:gap-6 ">
                 <Cards.SimpleCard title="Aplicaciones" message="Apps web, móviles y de escritorio con y sin bases de datos." size="w-full h-full" />
                 <Cards.SimpleCard title="Landing Pages" message="Paginas web simples con llamado a la acción claro y diseño atractivo." size="w-full h-full" />
@@ -28,7 +28,7 @@ const PageClient = () => {
                 <Cards.SimpleCard title="Inventarios" message="Creación de sistemas de control de inventario y administración." size="w-full h-full" />
                 <Cards.SimpleCard title="Apps Móviles" message="Desarrollo de aplicaciones para celulares y dispositivos de bolsillo." size="w-full h-full" />
                 <Cards.SimpleCard title="Mantenimiento" message="Servicio de mantenimiento y actualización a sus softwares." size="w-full h-full" />
-                <Cards.SimpleCard title="Otros servicios" message="¿Interesado en un otro servicio?" size="w-full h-full" buttonMsg={'Contacto'} buttonRoute='/contact' />
+                <Cards.SimpleCard title="Otros servicios" message="¿Interesado en otro servicio?" size="w-full h-full" buttonMsg={'Contacto'} buttonRoute='/contact' />
 
             </article>
 
