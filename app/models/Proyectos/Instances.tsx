@@ -97,13 +97,31 @@ const ProyectoJumbleBot = new Proyecto (8, "Jumble - Bot de Discord",
     'Python, Discord', '08/23', '/previews/jumble.png', {available:false, URL:undefined}, {available: true, URL:'https://github.com/DavidMojica/Jumble'}
 )
 
+const ProyectoTuliaTell = new Proyecto(9, 'IA Llamadas',
+    <>
+        En esta aplicación se implementó un modelo de Machine Learning que permite clasificar, calificar, extraer la sensación del cliente, categorizar, analizar el contenido inapropiado
+        y te da un feedback sobre diferentes aspectos y sentimientos de las llamadas telefónicas en una compañía. La IA es capaz de dar feedback y votar de 0 a 5 los siguientes items según el contenido de la llamada: <br /><br />
+        <ul>
+            <li>Satisfaccion del cliente</li>
+            <li>Resolución al primer contacto</li>
+            <li>Tono de voz</li>
+            <li>Claridad del lenguaje</li>
+            <li>Velocidad del habla</li>
+            <li>Empatía con el cliente</li>
+            <li>Lenguaje técnico</li>
+        </ul>
+        <br />
+        Además, es capaz de obtener la transcripción y darte un resumen general de la llamada, sin importar lo larga que sea.
+    </>
+    ,'Blazor, .Net 9, C#, Azure, SQL Server, ASP.Net','01/25','/previews/tuliatell.png', {available:false, URL:undefined}, {available:false, URL:undefined})
+
 export const ProyectosPrincipales:Proyecto[] = [
+    ProyectoTuliaTell,
     ProyectoDucaplast,
     ProyectoSaludMental,
     ProyectoArriendofinca,
     ProyectoDavidaStore,
-    ProyectoSkyHub,
-    ProyectoAlkostoPowerBI,
+    ProyectoAlkostoPowerBI
 ];
 
 
@@ -111,5 +129,6 @@ export const ProyectosAll:Proyecto[] = [
     ...ProyectosPrincipales,
     ProyectoAstroid,
     ProyectoArduinoSemaforo,
-    ProyectoJumbleBot
+    ProyectoJumbleBot,
+    ProyectoSkyHub
 ]

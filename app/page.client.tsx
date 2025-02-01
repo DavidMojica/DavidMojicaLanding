@@ -44,17 +44,17 @@ export default function HomeClient():React.JSX.Element {
         {/* 1st: Section: Introduction */}
         <section className="bg-tertiary py-24 dark:bg-primary ">
           <article className="max-w-2xl grid place-items-center mx-8 md:mx-auto text-center">
-            <Image src="/photo.jpeg" alt="foto.png" className="size-60 lg:size-72 rounded-full" width={img_principal_width} height={img_principal_height} />
-            <h2 className="text-primary dark:text-white text-3xl md:text-5xl mt-4 font-bolder">David Mojica <br /> Desarrollador de Software</h2>
+            <Image src="/photo.jpeg" alt="foto.png" className="size-60 lg:size-72 rounded-full object-cover" width={img_principal_width} height={img_principal_height} />
+            <h2 className="text-primary dark:text-white text-3xl md:text-5xl mt-4 font-bolder">David Mojica <br /> Desarrollo Web | IA</h2>
             <p className="text-secondary dark:text-tertiary mt-4 md:text-xl ">
-            Creación, mantenimiento y diseño de soluciones tecnológicas a la medida con más de <strong>2 años de experiencia</strong> en la industria del software.
+            Más de <strong>2 años</strong> de experiencia en desarrollo web fullstack, también en entrenamiento e integración de IA a todo tipo de aplicaciones para automatizar procesos y mejorar la productividad de la compañía.
             </p>
             <section className='text-secondary  dark:text-tertiary my-6'>
                 <ul className='flex justify-center items-center gap-5 text-2xl'>
                     <li><a href="https://github.com/DavidMojica" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><FaGithub/></a></li>
-                    <li><a href="https://wa.me/573197750000" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><FaWhatsapp/></a></li>
-                    <li><a href="https://www.linkedin.com/in/david-mojica-vergara-a3898a265/" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><FaLinkedin/></a></li>
-                    <li><a href="mailto:davidmojicav@gmail.com" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><SiGmail/></a></li>
+                    {/* <li><a href="https://wa.me/573197750000" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><FaWhatsapp/></a></li> */}
+                    <li><a href="https://www.linkedin.com/in/david-mojica-a3898a265/" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><FaLinkedin/></a></li>
+                    {/* <li><a href="mailto:davidmojicav@gmail.com" target='_blank' className="hover:text-primary dark:text-secondary dark:hover:text-white duration-300"><SiGmail/></a></li> */}
                 </ul>
             </section>
             <a href="#trusted_by">
@@ -81,12 +81,12 @@ export default function HomeClient():React.JSX.Element {
                 {/* Simplecards */}
                 <section className="mt-12">
                   <article className="grid grid-cols-1 sm:grid-cols-2 place-items-center gap-3 xl:gap-6 ">
-                    <Cards.SimpleCard title="Aplicaciones" message="Apps web, móviles y de escritorio con y sin bases de datos." size="w-full h-full" />
-                    <Cards.SimpleCard title="Landing Pages" message="Paginas web simples con llamado a la acción claro y diseño atractivo." size="w-full h-full" />
-                    <Cards.SimpleCard title="Ecommerce" message="Integre pagos en línea y en tiempo real a sus aplicaciones." size="w-full h-full" />
-                    <Cards.SimpleCard title="Bases de Datos" message="Integración de bases de datos a sus aplicaciones y servicios." size="w-full h-full" />
-                    <Cards.SimpleCard title="API's" message="Integración de API's a sus aplicaciones y servicios." size="w-full h-full" />
-                    <Cards.SimpleCard title="Big Data" message="Dashboards, historias de usuario y gráficos de sus datos recopilados." size="w-full h-full" />
+                    <Cards.SimpleCard title="Aplicaciones" message="Todo tipo de aplicaciones Web, Escritorio y móviles a la medida." size="w-full h-full" />
+                    <Cards.SimpleCard title="Inteligencia Artificial" message="Chatbots y agentes capaces de automatizar grandes procesos." size="w-full h-full" />
+                    <Cards.SimpleCard title="Tiendas online" message="Inicia tu propio negocio de ventas integrando pagos seguros en línea en tiempo real." size="w-full h-full" />
+                    <Cards.SimpleCard title="Big Data" message="Obtenga información crucial para su negocio a partir de sus datos existentes." size="w-full h-full" />
+                    <Cards.SimpleCard title="Automatización" message="Automatice procesos repetitivos por medio de robots que harán esas tareas por usted." size="w-full h-full" />
+                    <Cards.SimpleCard title="API's" message="Obtenga y exporte datos desde y hacia cualquier otro lugar el mundo por medio de API's." size="w-full h-full" />
                   </article>
 
                   <Link href={'/services'}>
@@ -119,8 +119,10 @@ export default function HomeClient():React.JSX.Element {
                     <Image src="/photo.jpeg" alt="" className="max-h-80 max-w-96 w-full mt-12 rounded-tl-xl rounded-tr-100 rounded-bl-100 rounded-br-xl object-cover" width={img_logo_width} height={img_logo_width} />
                   </aside>
                   <p className="text-secondary dark:text-white pt-10 lg:pt-0 text-xl tracking-wide leading-6 xl:leading-8 ">
-                    Actualmente me desempeño como Desarrollador de Software Freelancer (independiente) y analista de datos. Terminé mi carrera universitaria en <a href="https://pascualbravo.edu.co/" target="_blank" className="underline">Institución Universitaria Pascual Bravo </a>
-                    en Mayo de 2024, pero me he desempeñado como desarrollador independiente durante más de 2 años.
+                    Actualmente me desempeño como Desarrollador de Software en <a href="https://www.laproff.com/" target="_BLANK" className="underline underline-offset-2">Laboratorios Laproff</a>, un reconocido laboratorio farmacéutico ubicado en Sabaneta - Colombia.
+                    También desarrollo aplicaciones de forma independiente.
+                    Terminé mi carrera universitaria en <a href="https://pascualbravo.edu.co/" target="_blank" className="underline underline-offset-2">Institución Universitaria Pascual Bravo </a>
+                    en Mayo de 2024, pero antes de terminar, ya contaba con mas de año y medio de experiencia como desarrollador independiente.
                   </p>
                 </section>
 
