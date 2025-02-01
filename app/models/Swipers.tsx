@@ -62,6 +62,9 @@ class Swipers{
                     <Image src="/logo_davidastore.png" alt="davidastore.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
+                    <Image src="/logo_laproff.jpeg" alt="Laproff" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
+                </SwiperSlide>
+                <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
                     <Image src="/logo_bello.png" alt="bello.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
@@ -75,6 +78,9 @@ class Swipers{
                 </SwiperSlide>
                 <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
                     <Image src="/logo_davidastore.png" alt="davidastore.png" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
+                </SwiperSlide>
+                <SwiperSlide className="bg-white flex items-center justify-center rounded-xl">
+                    <Image src="/logo_laproff.jpeg" alt="Laproff" className="object-contain h-full w-full" width={img_logo_width} height={img_logo_height} />
                 </SwiperSlide>
 
             </Swiper>
@@ -115,16 +121,13 @@ class Swipers{
                     <Cards.SimpleCard title="Optimización" message="Sus aplicaciones serán optimizadas para ser rápidas y eficientes. " size="w-full h-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
-                    <Cards.SimpleCard title="Garantizado" message="Garantía ilimitada contra problemas de programación o Bugs. " size="w-full h-full" />
+                    <Cards.SimpleCard title="Garantizado" message="Garantía temporal contra problemas de programación o Bugs. " size="w-full h-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
                     <Cards.SimpleCard title="Adaptación" message="Sus aplicaciones lucirán bien desde cualquier dispositivo." size="w-full h-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
-                    <Cards.SimpleCard title="Soporte" message="Capacitación gratuita para los involucrados en el uso de la App." size="w-full h-full" />
-                </SwiperSlide>
-                <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
-                    <Cards.SimpleCard title="Calidad" message="Sus aplicaciones serán testeadas intensamente antes de su entrega." size="w-full h-full" />
+                    <Cards.SimpleCard title="Soporte" message="Capacitación para los involucrados en el uso de la App." size="w-full h-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
                     <Cards.SimpleCard title="Guías" message="Manual de usuario (Incluído). Manual técnico (A solicitar)" size="w-full h-full" />
