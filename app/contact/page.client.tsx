@@ -18,16 +18,17 @@ const PageClient = () => {
                 <h1><Texts.UnderlinedTitle text="Contacto" size="text-4xl md:text-5xl" /></h1>
                 <section className="shadow-md dark:shadow-gray-500 mt-16 p-6 ">
                     <h3 className="text-4xl md:text-3xl text-primary dark:text-white tracking-tight">
-                    ¿Interesado en trabajar conmigo? <span className="font-bolder">Házmelo saber</span>
+                    ¿Tienes una idea o proyecto que te gustaría desarrollar? <span className="font-bolder">¡Hablemos!</span>
                     </h3>
                     <FormContactMe />
                 </section>
 
                 <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
-                    <Cards.ExperienceCard title="+57 319 775 0000" message="Llama sin compromiso." size="w-full" level={4} />
-                    <Cards.ExperienceCard title="davidmojicav@gmail.com" message="Email." size="w-full" level={5}/>
                     <div className="lg:col-span-2">
-                        <Cards.ExperienceCard title="Medellín - Colombia" message="Horario de atención: Lunes a Sábado 8am - 4pm" size="w-full" level={6} />
+                        <Cards.ExperienceCard title="contacto@davidmojica.com" message="" size="w-full" level={5} />
+                    </div>
+                    <div className="lg:col-span-2">
+                        <Cards.ExperienceCard title="Medellín, Colombia" message="" size="w-full" level={6} />
                     </div>
                 </section>
             </article>

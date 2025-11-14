@@ -116,21 +116,19 @@ class Swipers{
             }}
             > 
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
-                    <Cards.SimpleCard title="De 0 a 100" message="Sus aplicaciones desde cero hasta su lanzamiento en internet." size="w-full h-full" />                </SwiperSlide>
+                    <Cards.SimpleCard title="De 0 a 100" message="Sus aplicaciones desde cero hasta su lanzamiento en internet." size="w-full h-full" />                
+                </SwiperSlide>
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
                     <Cards.SimpleCard title="Optimización" message="Sus aplicaciones serán optimizadas para ser rápidas y eficientes. " size="w-full h-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
-                    <Cards.SimpleCard title="Garantizado" message="Garantía temporal contra problemas de programación o Bugs. " size="w-full h-full" />
+                    <Cards.SimpleCard title="Garantía" message="Garantía temporal contra problemas de programación o Bugs. " size="w-full h-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
                     <Cards.SimpleCard title="Adaptación" message="Sus aplicaciones lucirán bien desde cualquier dispositivo." size="w-full h-full" />
                 </SwiperSlide>
                 <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
                     <Cards.SimpleCard title="Soporte" message="Capacitación para los involucrados en el uso de la App." size="w-full h-full" />
-                </SwiperSlide>
-                <SwiperSlide className="bg-white dark:bg-bgdark flex items-center justify-center rounded-xl my-12">
-                    <Cards.SimpleCard title="Guías" message="Manual de usuario (Incluído). Manual técnico (A solicitar)" size="w-full h-full" />
                 </SwiperSlide>
 
             </Swiper>

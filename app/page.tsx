@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import HomeClient from "./page.client";
 
 export const metadata:Metadata = {
-  title:"Home",
+  title:"Inicio",
   description:"Desarrollo de software a la medida, paginas web, aplicaciones, programas, análisis de datos y más.",
   openGraph: {
-    title: 'Home',
+    title: 'Inicio',
     description:"Desarrollo de software a la medida, paginas web, aplicaciones, programas, análisis de datos y más.",
     url: 'https://www.davidmojica.co',
     siteName: 'davidmojica',

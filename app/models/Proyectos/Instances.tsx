@@ -11,7 +11,7 @@ const ProyectoDucaplast = new Proyecto(0,'Ducaplast Ecommerce',
         Los impactos finales de esta aplicación fueron muy positivos. Con su despliegue se logró una reducción muy significativa em el uso de papel gracias a la digitalización de las facturas, se logró un control total de la gestión de cada pedido a través de diversos historiales, lo que permitió un seguimiento detallado y preciso. Asímismo, se ahorró mucho tiempo entre el proceso de venta y despacho del pedido, aumentando la productividad de esta empresa.
     </>,
     'DJANGO, Bootstrap 5, Jinja 2, MVC, OOP, ORM, Css, JavaScript, JQuery, RENDER, PostgreSQL',
-    '06/24', '/previews/ducaplast.png', {available:true, URL:'https://ducaplast.com.co/'}, 
+    '06/24', ['/previews/ducaplast.png'], {available:true, URL:'https://ducaplast.com.co/'}, 
     {available:true, URL:'https://github.com/DavidMojica/ducaplast-ecommerce'}
 );
 
@@ -26,7 +26,7 @@ const ProyectoSaludMental = new Proyecto(1, 'Salud Mental',
         Este programa segmenta a sus usuarios por roles, cada tipo de usuario tiene sus responsabilidades en la plataforma. Posee un panel de administración de usuarios y de pacientes. Se desplegará de forma local en una red de ordenadores limitada a los hospitales que requieran el software, por ende este software en su despliegue no está abierto al público.
     </>,
     'DJANGO, Bootstrap 5, Jinja 2, MVC, OOP, ORM, Css, JavaScript, Openpyxl, Reportlab, PostgreSQL',
-    '11/23', '/previews/saludmental.jpeg', {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/T3'}
+    '11/23', ['/previews/saludmental.jpeg'], {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/T3'}
 );
 
 const ProyectoArriendofinca = new Proyecto(2, 'Arriendofinca.com',
@@ -38,7 +38,7 @@ const ProyectoArriendofinca = new Proyecto(2, 'Arriendofinca.com',
         Esta aplicación posee diversos páneles de control para las propiedades e información personal para facilitar la publicación de inmuebles.
     </>,
     'DJANGO, Bootstrap 5, Jinja 2, MVC, OOP, ORM, Css, JavaScript, PostgreSQL, Raspberry PI, API',
-    '05/24', '/previews/arriendofinca.png', {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/arriendofinca-II'}
+    '05/24', ['/previews/arriendofinca.png'], {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/arriendofinca-II'}
 );
 
 const ProyectoDavidaStore = new Proyecto(3, 'Davida Store',
@@ -46,7 +46,7 @@ const ProyectoDavidaStore = new Proyecto(3, 'Davida Store',
         'Landing page de tienda online de artículos varios. Contiene una página de landing y un catálogo de productos. 
     </>,
     'NextJS, Tailwind, Vercel',
-    '06/24', '/previews/davidastore.png', {available:true, URL: 'https://www.davidastore.com/'}, {available:true, URL:'https://github.com/DavidMojica/davida-store'}
+    '06/24', ['/previews/davidastore.png'], {available:true, URL: 'https://www.davidastore.com/'}, {available:true, URL:'https://github.com/DavidMojica/davida-store'}
 );
 
 const ProyectoSkyHub = new Proyecto(4, 'SkyHub',
@@ -54,7 +54,7 @@ const ProyectoSkyHub = new Proyecto(4, 'SkyHub',
         Aplicación web que muestra información útil sobre los objetos celestes, se comsumen diversas API como fuentes de información, como por ejemplo la API de la Nasa, para mayor precisión de los datos.
     </>,
     'NextJS, Tailwind, API de la Nasa, Solar System OpenData API, People In The Space API',
-    '04/24', '/previews/skyhub.png', {available:true, URL:'https://skyhub2.vercel.app/'}, {available:true, URL:'https://github.com/DavidMojica/SkyHub'}
+    '04/24', ['/previews/skyhub.png'], {available:true, URL:'https://skyhub2.vercel.app/'}, {available:true, URL:'https://github.com/DavidMojica/SkyHub'}
 )
 
 const ProyectoAlkostoPowerBI = new Proyecto(6, 'Dashboard Alkosto',
@@ -66,7 +66,7 @@ const ProyectoAlkostoPowerBI = new Proyecto(6, 'Dashboard Alkosto',
         Nota de descarga <br />
         Puede descargar y visualizar el Dashboard si tiene instalado Microsoft Power BI Desktop en su PC, de lo contrario, no puede.
     </>,
-    'Power BI', '06/24', '/previews/alkosto.png', {available:false, URL:undefined}, {available: false, URL:undefined}, {available:true, URL:'/downloads/reporte.pbix'}
+    'Power BI', '06/24', ['/previews/alkosto.png'], {available:false, URL:undefined}, {available: false, URL:undefined}, {available:true, URL:'/downloads/reporte.pbix'}
 )
 
 
@@ -75,7 +75,7 @@ const ProyectoAstroid = new Proyecto (5, 'Astroid',
         Aplicación móvil que muestra información útil sobre los objetos celestes, se comsumen diversas API como fuentes de información, como por ejemplo la API de la Nasa, para mayor precisión de los datos. 
     </>,
     'Java, MaterialDesign, API de la Nasa, Solar System OpenData API, People In The Space API',
-    '04/24', '/previews/astroid.png', {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/Astroid'} 
+    '04/24', ['/previews/astroid.png'], {available:false, URL:undefined}, {available:true, URL:'https://github.com/DavidMojica/Astroid'} 
 )
 
 
@@ -85,7 +85,7 @@ const ProyectoArduinoSemaforo = new Proyecto (7, "Semaforo inteligente",
         El sistema está constituido por una placa Arduíno y un sensor de ultrasonido para detectar la proximidad de la persona. <br /> <br />
         Se puede replicar a escala y hacerlo funcionar en cualquier semaforo donde se instale.
     </>,
-    'Arduino, C++', '09/23', '/previews/semaforointeligente.png', {available:true, URL:'https://wokwi.com/projects/375798460804393985'}, {available:true, URL:'https://wokwi.com/projects/375798460804393985'}
+    'Arduino, C++', '09/23', ['/previews/semaforointeligente.png'], {available:true, URL:'https://wokwi.com/projects/375798460804393985'}, {available:true, URL:'https://wokwi.com/projects/375798460804393985'}
 )
 
 const ProyectoJumbleBot = new Proyecto (8, "Jumble - Bot de Discord",
@@ -94,32 +94,29 @@ const ProyectoJumbleBot = new Proyecto (8, "Jumble - Bot de Discord",
         Dependiendo del idioma seleccionado, el bot arroja varios carácteres al azar con los que los jugadores deben de formar palabras en dicho idioma para ganar puntos y al final gana quien más puntos haya hecho en la partida. <br />
         Hay entre 250.000 y 350.000 palabras disponibles por idioma.
     </>,
-    'Python, Discord', '08/23', '/previews/jumble.png', {available:false, URL:undefined}, {available: true, URL:'https://github.com/DavidMojica/Jumble'}
+    'Python, Discord', '08/23', ['/previews/jumble.png'], {available:false, URL:undefined}, {available: true, URL:'https://github.com/DavidMojica/Jumble'}
 )
 
 const ProyectoTuliaTell = new Proyecto(9, 'IA Llamadas',
     <>
-        En esta aplicación se implementó un modelo de Machine Learning que permite clasificar, calificar, extraer la sensación del cliente, categorizar, analizar el contenido inapropiado
-        y te da un feedback sobre diferentes aspectos y sentimientos de las llamadas telefónicas en una compañía. La IA es capaz de dar feedback y votar de 0 a 5 los siguientes items según el contenido de la llamada: <br /><br />
-        <ul>
-            <li>Satisfaccion del cliente</li>
-            <li>Resolución al primer contacto</li>
-            <li>Tono de voz</li>
-            <li>Claridad del lenguaje</li>
-            <li>Velocidad del habla</li>
-            <li>Empatía con el cliente</li>
-            <li>Lenguaje técnico</li>
-        </ul>
-        <br />
-        Además, es capaz de obtener la transcripción y darte un resumen general de la llamada, sin importar lo larga que sea.
+        Esta aplicación utiliza un modelo de IA entrenado por mí, orientado al analisis de llamadas. Detecta sentimientos, clasifica contenido y califica aspectos clave de la experiencia del cliente. Evalúa ítems como satisfacción, tono, empatía y claridad, otorgando una puntuación de 0 a 5.
+        También transcribe la llamada y genera un resumen automático sin importar su extensión.
     </>
-    ,'Blazor, .Net 9, C#, Azure, SQL Server, ASP.Net','01/25','/previews/tuliatell.png', {available:false, URL:undefined}, {available:false, URL:undefined})
+    ,'Blazor, .Net 9','01/25',['/previews/tuliatell.png', '/previews/tuliatell_2.jpg', '/previews/tuliatell_3.jpg'], {available:false, URL:undefined}, {available:false, URL:undefined})
+
+const ProyectoLaproff360 = new Proyecto(
+10, 'Plataforma 360',
+    <>
+        Plataforma modular tipo PWA cuyo objetivo es abarcar distintos procesos que incluyan IA. Es la plataforma que le da la cara al usuario final. Cuenta con sus respectivos sistemas para perfilar, dar permisos, editar la información y mucho más.
+    </>,
+    'Blazor WASM, .Net 9, C#, SQL', '2025', ['/previews/lap360.jpg', '/previews/lap360_2.jpg', '/previews/lap360_3.jpg'], {available:false, URL:undefined}, {available:false, URL:undefined}
+);
 
 export const ProyectosPrincipales:Proyecto[] = [
     ProyectoTuliaTell,
     ProyectoDucaplast,
     ProyectoSaludMental,
-    ProyectoArriendofinca,
+    ProyectoLaproff360,
     ProyectoDavidaStore,
     ProyectoAlkostoPowerBI
 ];
@@ -130,5 +127,6 @@ export const ProyectosAll:Proyecto[] = [
     ProyectoAstroid,
     ProyectoArduinoSemaforo,
     ProyectoJumbleBot,
-    ProyectoSkyHub
+    ProyectoSkyHub,
+    ProyectoArriendofinca
 ]

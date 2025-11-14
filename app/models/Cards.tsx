@@ -19,10 +19,10 @@ type ExperienceLevel = {
 
 class Cards{
     private static LevelMap:ExperienceLevel = {
-        0:'NEW',
-        1:'JUNIOR',
-        2:'MID',
-        3:'SENIOR',
+        0:'BASICO',
+        1:'INTERMEDIO',
+        2:'AVANZADO',
+        3:'EXPERTO',
         4:'#',
         5:'CORREO',
         6: 'DETALLES'
@@ -49,7 +49,7 @@ class Cards{
     public static ExperienceCard({title, message, size, level=0}:CardProps):React.JSX.Element{
         return(
             <article className={`p-6 bg-white dark:bg-bgdark shadow-md dark:shadow-gray-500 rounded-xl ${size} relative overflow-hidden`}>
-                <span className="absolute top-0  right-0 uppercase font-bolder text-8xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl tracking-tighter text-muted dark:text-bgdarkless z-10">{Cards.LevelMap[level]}</span>
+                <span className="absolute top-0  right-0 uppercase font-bolder text-8xl md:text-6xl lg:text-7xl tracking-tighter text-muted dark:text-bgdarkless z-10">{Cards.LevelMap[level]}</span>
                 <div className="relative  z-20">
                     <h2 className="text-3xl text-primary dark:text-white font-bolder">{title}</h2>
                     <p className="text-secondary dark:text-white text-nowrap">{message}</p>

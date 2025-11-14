@@ -11,18 +11,28 @@ class Proyecto {
     private Description:React.JSX.Element;
     private MadeWith:string;
     private Date:string;
-    private ImgURL:string;
+    private ImgURLs:string[]; 
     private Preview:AvailableAndUrl;
     private SourceCode:AvailableAndUrl;
     private Downloadeable:AvailableAndUrl;
 
-    constructor (id:number,name:string, description:React.JSX.Element, madeWith:string, date:string, imgUrl:string, preview:AvailableAndUrl, sourceCode:AvailableAndUrl, downloadeable:AvailableAndUrl={available:false, URL:undefined}){
+    constructor (
+        id:number,
+        name:string, 
+        description:React.JSX.Element, 
+        madeWith:string, 
+        date:string, 
+        imgUrls:string[], 
+        preview:AvailableAndUrl, 
+        sourceCode:AvailableAndUrl, 
+        downloadeable:AvailableAndUrl={available:false, URL:undefined}
+    ){
         this.id = id;
         this.Name = name;
         this.Description = description;
         this.MadeWith = madeWith;
         this.Date=date;
-        this.ImgURL = imgUrl;
+        this.ImgURLs = imgUrls;
         this.Preview = preview;
         this.SourceCode = sourceCode;
         this.Downloadeable = downloadeable;
@@ -44,8 +54,12 @@ class Proyecto {
         return this.Date;
     }
 
+    get getImages():string[]{
+        return this.ImgURLs;
+    }
+
     get getImage():string{
-        return this.ImgURL;
+        return this.ImgURLs[0]; 
     }
 
     get checkPreview():boolean{
